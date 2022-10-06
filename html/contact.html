@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ML Strength - Health and Fitness</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <main>
+
+        <nav id="nav-component"></nav>
+        <header class="banner5">
+
+        </header>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <em class="ri-user-fill"></em>
+            <input type="text" id="name" name="name" pattern="([a-zA-Z]{2,})[ ]([a-zA-Z]{2,})" required>
+            <span class="validation-error">Please provide your first name and then last name with a space between.</span>
+
+            <label for="phone">Phone:</label>
+            <em class="ri-phone-line"></em>
+            <input type="tel" name="phone" id="phone" pattern="^([+]?\d{1,2}[-\s]?|)\d{3}[-\s]?\d{3}[-\s]?\d{4}$" required>
+            <span class="validation-error">Please provide a valid phone number.</span>
+
+            <label for="email">Email:</label>
+            <em class="ri-mail-open-line"></em>
+            <input type="email" name="email" id="email" pattern=".+\@.+\..+" required>
+            <span class="validation-error">Please provide a valid email address.</span>
+
+            <label for="contact-method">Preferred Contact Method:</label>
+            <em class="ri-file-list-line"></em>
+            <select name="contact-method" id="contact-method" required>
+                    <option value="">Phone</option>
+                    <option value="">Email</option>
+                </select>
+
+            <label for="message">Message:</label>
+            <em class="ri-file-text-line"></em>
+            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            <span class="validation-error">Please provide a message.</span>
+
+            <label for="sign-up">Sign-up to newsletter:</label>
+            <em class="ri-mail-add-line"></em>
+            <input type="checkbox" name="sign-up" id="sign-up">
+
+            <label for="agree-terms">Agree to terms:</label>
+            <em class="ri-scales-3-line"></em>
+            <input type="checkbox" name="agree-terms" id="agree-terms" required>
+            <span class="validation-error">You must agree to the terms.</span>
+
+            <input type="submit" value="Send">
+        </form>
+        <span class="hover-help">Help?</span>
+        <article class="hover-help-content">
+            This is where the help is!
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QsGYNfagHlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+
+        <footer id="footer-component"></footer>
+    </main>
+
+</body>
+
+</html>
